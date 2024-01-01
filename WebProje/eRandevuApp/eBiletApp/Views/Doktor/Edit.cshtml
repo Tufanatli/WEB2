@@ -1,0 +1,41 @@
+﻿@model eRandevuApp.Models.doktor
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
+    ViewData["Title"] = "doktor Bilgilerini Düzenle";
+}
+
+<h1 class="text-center">@localizer["doktor Bilgilerini Düzenle"]</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4 text-left m-auto form">
+        <form method="post" enctype="multipart/form-data" asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="DoktorId" />
+            <div class="form-group">
+                @*<label asp-for="DoktorFotografi" class="control-label"></label>*@
+                <label asp-for="DoktorFotografi" class="control-label">@localizer["Yeni Görsel"]</label>
+                <input asp-for="DoktorFotografi" type="file" name="file" class="form-control mb-2" />
+                <input style="display:none;" asp-for="DoktorFotografi" class="form-control mb-2" />
+                <span asp-validation-for="DoktorFotografi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoktorAdSoyad" class="control-label"></label>
+                <input asp-for="DoktorAdSoyad" class="form-control" />
+                <span asp-validation-for="DoktorAdSoyad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoktorHakkinda" class="control-label"></label>
+                <textarea asp-for="DoktorHakkinda" rows="5" class="form-control"> </textarea>
+                <span asp-validation-for="DoktorHakkinda" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="@localizer["Kaydet"]" class="btn btn-primary" />
+                <a class="btn btn-secondary float-right" asp-action="Index">@localizer["Geri Dön"]</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

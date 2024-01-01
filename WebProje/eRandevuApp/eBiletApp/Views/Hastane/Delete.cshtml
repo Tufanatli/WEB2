@@ -1,0 +1,37 @@
+﻿@model eRandevuApp.Models.Hastane
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+<h3>@localizer["Silmek istediğinize emin misiniz?"]</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HastaneFotografi)
+        </dt>
+        <dd class="col-sm-10">
+            <img src="@Model.HastaneFotografi" asp-append-version="true" style="width:200px; height:200px;">
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HastaneAdi)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HastaneAdi)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HastaneHakkinda)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HastaneHakkinda)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="HastaneId" />
+        <input type="submit" value="@localizer["Sil"]" class="btn btn-danger" />
+        <a class="btn btn-secondary float-right" asp-action="Index">@localizer["Geri Dön"]</a>
+    </form>
+</div>

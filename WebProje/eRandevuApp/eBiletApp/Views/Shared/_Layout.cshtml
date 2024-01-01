@@ -1,0 +1,171 @@
+﻿@inject Microsoft.AspNetCore.Identity.UserManager<Kullanici> kullanici
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - eRandevu</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+</head>
+
+<body style="background: linear-gradient(45deg,  ghostwhite, lightblue);">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark border-bottom box-shadow mb-3" style="background: linear-gradient(45deg, lightblue, ghostwhite); ">
+            <div class="float-md-right"><partial name="_Culture" /></div>
+            <div class="container-fluid">
+
+                <a class="navbar-brand" asp-controller="Poliklinik" asp-action="Index"><h1 class="text-dark" >eRandevu</h1>
+                <img src="~/images/Logo111.png" style="width: 30px; height: 30px; display: inline-block;" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="form-inline" asp-controller="Poliklinik" asp-action="AramaSonucu">
+                    <input type="search" name="arananPoliklinik" class="form-control rounded " placeholder="@localizer["Poliklinik Ara"]" aria-label="Search"
+                           aria-describedby="search-addon" />
+
+                    <button type="submit" class="btn btn-light" style="margin-left:3px;">@localizer["Ara"]</button>
+                </form>
+                <div class="navbar-collapse collapse d-md-inline-flex justify-content-between">
+
+                    <ul class="navbar-nav flex-grow-1 flex-sm-row-reverse">
+
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-outline-light dropdown-toggle border-dark text-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Admin Menu
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" asp-controller="doktor" asp-action="Index">@localizer["Doktorlar"]</a>
+                                    <a class="dropdown-item" asp-controller="Bashekim" asp-action="Index">@localizer["Bashekimler"]</a>
+                                    <a class="dropdown-item" asp-controller="Hastane" asp-action="Index">@localizer["Hastaneler"]</a>
+                                    <a class="dropdown-item" asp-controller="Poliklinik" asp-action="Create">@localizer["Poliklinik Ekle"]</a>
+                                </div>
+
+                            </li>
+                        }
+
+
+
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item rounded dropdown" style="margin-left: 20px;">
+                                <button class="btn btn-outline-light border-dark dropdown-toggle text-dark mr-5" type="button" id="kullanici" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    @localizer["Hoşgeldiniz,"] @kullanici.GetUserName(User)
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="kullanici">
+                                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                                    {<a class="dropdown-item text-center" asp-controller="Account" asp-action="TumKullanicilar">@localizer["Kullanıcılar"]</a>}
+                                    <a class="dropdown-item text-center" asp-controller="Randevu" asp-action="TumRandevular">@localizer["Randevular"]</a>
+                                    <form asp-controller="Account" asp-action="Cikis">
+                                        <button class="dropdown-item" style="background:none;border:none; text-align:center;">@localizer["Çıkış"]</button>
+                                    </form>
+                                </div>
+                            </li>
+
+                            <li class="nav-item rounded" style="margin-left: 20px; ">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Randevu" asp-action="Index">
+                                    @localizer["Randevularım"]
+                                    <img src="~/images/randevu-al.png" style="width: 30px; height: 30px; display: inline-block;" />
+                                </a>
+                            </li>
+                        }
+
+                        else
+                        {
+                            <li class="nav-item rounded" style=" margin-left: 20px; ">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Uyelik">
+                                    @localizer["Üye Ol"]
+                                    <img src="~/images/sign-up.png" style="width: 30px; height: 30px; display: inline-block;" />
+                                </a>
+                            </li>
+                            <li class="nav-item rounded" style="margin-left: 20px; ">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">
+                                    @localizer["Giriş Yap"]
+                                    <img src="~/images/login.png" style="width: 30px; height: 30px; display: inline-block;" />
+                                </a>
+                            </li>
+                        }
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <footer class="footer  font-small pt-4 " style="background: linear-gradient(45deg, lightblue, ghostwhite);">
+        <div class="container-fluid text-center text-md-left text-dark" style="white-space: normal;">
+            <div class="row">
+                <div class="col-md-5 mt-md-0 mt-3">
+                    <h5 class="font-weight-bold text-dark">@localizer["Takip"]</h5>
+                    <p>INSTAGRAM</p>
+                    <p>FACEBOOK</p>
+                    <p>YOUTUBE</p>
+                </div>
+
+                <div class="col-md-4 mb-md-0 mb-3 ">
+
+                    <h5 class=" text-dark font-weight-bold ">@localizer["Kategoriler"]</h5>
+
+                    <ul class="list-unstyled ">
+                        <li>
+                            <a class="text-dark" href="#!">@localizer["Dahiliye"]</a>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="#!">@localizer["Endokrin"]</a>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="#!">@localizer["Cildiye"]</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <h5 class=" text-dark font-weight-bold">@localizer["Biz Kimiz?"]</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="text-dark" href="#!">@localizer["Hakkımızda"]</a>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="#!">@localizer["İletişim"]</a>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="#!">@localizer["Sık Sorulan"]</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-copyright text-center text-dark py-3">
+            <h5 class="text-dark ">&copy; 2022 - eRandevu</h5>
+        </div>
+
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

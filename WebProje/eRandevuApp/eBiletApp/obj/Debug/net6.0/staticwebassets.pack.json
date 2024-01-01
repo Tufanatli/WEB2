@@ -1,0 +1,301 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\eRandevuApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\eRandevuApp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Bashekimler\\ahmetkaya.jpg",
+      "PackagePath": "staticwebassets\\images\\Bashekimler\\ahmetkaya.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Bashekimler\\elifguneri.jpg",
+      "PackagePath": "staticwebassets\\images\\Bashekimler\\elifguneri.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Bashekimler\\keremalptekin.jpg",
+      "PackagePath": "staticwebassets\\images\\Bashekimler\\keremalptekin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Bashekimler\\muratakin.jpg",
+      "PackagePath": "staticwebassets\\images\\Bashekimler\\muratakin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Bashekimler\\sibelerdem.jpg",
+      "PackagePath": "staticwebassets\\images\\Bashekimler\\sibelerdem.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Doktorlar\\0a5408e4-fd52-4ac8-a841-04175c751d8d.pdf",
+      "PackagePath": "staticwebassets\\images\\Doktorlar\\0a5408e4-fd52-4ac8-a841-04175c751d8d.pdf"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Doktorlar\\ahmetdemir.jpg",
+      "PackagePath": "staticwebassets\\images\\Doktorlar\\ahmetdemir.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Doktorlar\\ayseyilmaz.jpg",
+      "PackagePath": "staticwebassets\\images\\Doktorlar\\ayseyilmaz.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Doktorlar\\banucetin.jpg",
+      "PackagePath": "staticwebassets\\images\\Doktorlar\\banucetin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Doktorlar\\ddf5bc3b-7539-455f-bd5e-3ac8571b52cc.jpg",
+      "PackagePath": "staticwebassets\\images\\Doktorlar\\ddf5bc3b-7539-455f-bd5e-3ac8571b52cc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Doktorlar\\ea276978-2a8d-4755-b571-578bdd00a078.png",
+      "PackagePath": "staticwebassets\\images\\Doktorlar\\ea276978-2a8d-4755-b571-578bdd00a078.png"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Doktorlar\\ekremselcuk.jpg",
+      "PackagePath": "staticwebassets\\images\\Doktorlar\\ekremselcuk.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Doktorlar\\elifkorkmaz.jpg",
+      "PackagePath": "staticwebassets\\images\\Doktorlar\\elifkorkmaz.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Doktorlar\\emrekaratas.jpg",
+      "PackagePath": "staticwebassets\\images\\Doktorlar\\emrekaratas.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Doktorlar\\kemalarslan.jpg",
+      "PackagePath": "staticwebassets\\images\\Doktorlar\\kemalarslan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Doktorlar\\leylasahin.jpg",
+      "PackagePath": "staticwebassets\\images\\Doktorlar\\leylasahin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Doktorlar\\mehmetozkan.jpg",
+      "PackagePath": "staticwebassets\\images\\Doktorlar\\mehmetozkan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Doktorlar\\sedaaksoy.jpg",
+      "PackagePath": "staticwebassets\\images\\Doktorlar\\sedaaksoy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Hastaneler\\acibadem.jpg",
+      "PackagePath": "staticwebassets\\images\\Hastaneler\\acibadem.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Hastaneler\\ankara-sehir.jpg",
+      "PackagePath": "staticwebassets\\images\\Hastaneler\\ankara-sehir.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Hastaneler\\ege-tip.jpg",
+      "PackagePath": "staticwebassets\\images\\Hastaneler\\ege-tip.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Hastaneler\\florence-nightingale.jpg",
+      "PackagePath": "staticwebassets\\images\\Hastaneler\\florence-nightingale.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Hastaneler\\hacettepe.jpg",
+      "PackagePath": "staticwebassets\\images\\Hastaneler\\hacettepe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Logo111.png",
+      "PackagePath": "staticwebassets\\images\\Logo111.png"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Poliklinikler\\dermatoloji.jpg",
+      "PackagePath": "staticwebassets\\images\\Poliklinikler\\dermatoloji.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Poliklinikler\\endokrinoloji.jpg",
+      "PackagePath": "staticwebassets\\images\\Poliklinikler\\endokrinoloji.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Poliklinikler\\gastroenteroloji.jpg",
+      "PackagePath": "staticwebassets\\images\\Poliklinikler\\gastroenteroloji.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Poliklinikler\\kardiyoloji.jpg",
+      "PackagePath": "staticwebassets\\images\\Poliklinikler\\kardiyoloji.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Poliklinikler\\noroloji.jpg",
+      "PackagePath": "staticwebassets\\images\\Poliklinikler\\noroloji.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\Poliklinikler\\ortopedi.jpg",
+      "PackagePath": "staticwebassets\\images\\Poliklinikler\\ortopedi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\login.png",
+      "PackagePath": "staticwebassets\\images\\login.png"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\randevu-al.png",
+      "PackagePath": "staticwebassets\\images\\randevu-al.png"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\images\\sign-up.png",
+      "PackagePath": "staticwebassets\\images\\sign-up.png"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ekrem\\OneDrive\\Masaüstü\\BSM311_WebProgramlama-main\\WebProje\\eRandevuApp\\eBiletApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.eRandevuApp.props",
+      "PackagePath": "build\\eRandevuApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.eRandevuApp.props",
+      "PackagePath": "buildMultiTargeting\\eRandevuApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.eRandevuApp.props",
+      "PackagePath": "buildTransitive\\eRandevuApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.eRandevuApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

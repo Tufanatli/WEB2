@@ -1,0 +1,12 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+<div class="row">
+    <div class="col-md-6 offset-3 alert alert-success text-center">
+        <h1>@localizer["Randevunuz alındı."]</h1>
+        <h2>@localizer["Sağlıklı günler dileriz."]</h2>
+
+    </div>
+</div>
+<div class="text-center">
+    <a class="btn btn-success text-white" asp-controller="Poliklinik" asp-action="Index">@localizer["Ana Sayfa"]</a>
+</div>

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<eRandevuApp.Models.Hastane>
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
+    ViewData["Title"] = "Hastaneler";
+}
+
+<h1>@localizer["SİNEMALAR"]</h1>
+
+@if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+{<p>
+        <a asp-action="Create" class="btn btn-success text-white">@localizer["Hastane Ekle"]</a>
+    </p>
+}
+
+<table class="table">
+    <thead>
+        <tr class="text-center text-uppercase">
+            <th>
+                @Html.DisplayNameFor(model => model.HastaneFotografi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HastaneAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HastaneHakkinda)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="text-center">
+                <td>
+                    <img src="@item.HastaneFotografi" asp-append-version="true" style="width:200px; height:200px;">
+                </td>
+                <td class="font-weight-bold">
+                    @Html.DisplayFor(modelItem => item.HastaneAdi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HastaneHakkinda)
+                </td>
+                <td>
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                    {<a asp-action="Edit" asp-route-id="@item.HastaneId" class="btn btn-secondary btn-block">@localizer["Düzenle"]</a>
+                        <br />
+                        <a asp-action="Details" asp-route-id="@item.HastaneId" class="btn btn-info btn-block">@localizer["Detay"]</a>
+                        <br />
+                        <a asp-action="Delete" asp-route-id="@item.HastaneId" class="btn btn-dark btn-block">@localizer["Sil"]</a>}
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

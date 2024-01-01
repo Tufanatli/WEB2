@@ -1,0 +1,90 @@
+﻿@model eRandevuApp.Models.Poliklinik
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div>
+    <h4>@localizer["Poliklinik Bilgileri"]</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2 pb-5 align-self-center">
+            @Html.DisplayNameFor(model => model.PoliklinikAdi)
+        </dt>
+        <dd class="col-sm-10 font-weight-bold ">
+            @Html.DisplayFor(model => model.PoliklinikAdi)
+        </dd>
+        <dt class="col-sm-2 pb-5 align-self-center">
+            @Html.DisplayNameFor(model => model.PoliklinikFotografi)
+        </dt>
+        <dd class="col-sm-10">
+            <img style="width:200px; height:250px;" src="@Model.PoliklinikFotografi" asp-append-version="true">
+        </dd>
+        <dt class="col-sm-2 pb-5 align-self-center">
+            @Html.DisplayNameFor(model => model.PoliklinikHakkinda)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PoliklinikHakkinda)
+        </dd>
+        <dt class="col-sm-2 pb-5 align-self-center">
+            @Html.DisplayNameFor(model => model.RandevuBaslamaSaati1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RandevuBaslamaSaati1)
+            @Html.DisplayFor(model => model.RandevuBaslamaSaati2)
+            @Html.DisplayFor(model => model.RandevuBaslamaSaati3)
+        </dd>
+
+        <dt class="col-sm-2 pb-5 align-self-center">
+            @Html.DisplayNameFor(model => model.AnaBilimDali)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AnaBilimDali)
+        </dd>
+        <dt class="col-sm-2 pb-5 align-self-center">
+            @Html.DisplayNameFor(model => model.FilmUcreti)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FilmUcreti) TL
+        </dd>
+        <dt class="col-sm-2 pb-5 align-self-center">
+            @Html.DisplayNameFor(model => model.Hastane)
+        </dt>
+        <dd class="col-sm-10">
+            <a asp-controller="Hastane" asp-action="Details" asp-route-id="@Model.Hastane.HastaneId">
+                @Model.Hastane.HastaneAdi
+            </a>
+        </dd>
+        <dt class="col-sm-2 pb-5 align-self-center">
+            @Html.DisplayNameFor(model => model.Bashekim)
+        </dt>
+        <dd class="col-sm-10">
+            <a asp-controller="Bashekim" asp-action="Details" asp-route-id="@Model.Bashekim.BashekimId">
+                @Model.Bashekim.BashekimAdSoyad
+            </a>
+        </dd>
+        <dt class="col-sm-2 pb-5 align-self-center">
+            @Html.DisplayNameFor(model => model.PolikliniklerDoktorlar)
+        </dt>
+        <dd class="row col-sm-10">
+            @foreach (var item in Model.PolikliniklerDoktorlar)
+            {
+                <div class="column mr-5">
+                    <img style="width:100px; height:150px;" src="@item.doktor.DoktorFotografi" asp-append-version="true">
+                    <br />
+                    <a asp-controller="doktor" asp-action="Details" asp-route-id="@item.doktor.DoktorId">
+                        @item.doktor.DoktorAdSoyad
+                    </a>
+                </div>
+            }
+
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-controller="Randevu" asp-action="SepeteEkleArtir" asp-route-id="@Model.PoliklinikId" class="btn btn-dark text-white">
+        @localizer["Randevu Al"]  @Model.FilmUcreti TL
+    </a>
+    <a class="btn btn-secondary ml-3" asp-action="Index">@localizer["Geri Dön"]</a>
+</div>

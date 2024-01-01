@@ -1,0 +1,81 @@
+﻿@model eRandevuApp.Models.HastaneVM
+@using eRandevuApp.Data
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
+    ViewData["Title"] = "Poliklinik Bilgilerini Düzenle";
+}
+
+<h2 class="text-center">@localizer["Poliklinik Bilgilerini Düzenle"]</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4 text-left m-auto form">
+        <form method="post" enctype="multipart/form-data" asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PoliklinikId" />
+            <div class="form-group">
+                <label asp-for="PoliklinikAdi" class="control-label"></label>
+                <input asp-for="PoliklinikAdi" class="form-control" />
+                <span asp-validation-for="PoliklinikAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PoliklinikHakkinda" class="control-label"></label>
+                <textarea asp-for="PoliklinikHakkinda" rows="5" class="form-control"></textarea>
+                <span asp-validation-for="PoliklinikHakkinda" class="text-danger"></span>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label asp-for="RandevuBaslamaSaati1" class="control-label"></label>
+                </div>
+                <div class="form-group col-4">
+                    <input asp-for="RandevuBaslamaSaati1" type="time" class="form-control" />
+                    <span asp-validation-for="RandevuBaslamaSaati1" class="text-danger"></span>
+                </div>
+                <div class="form-group col-4">
+                    <input asp-for="RandevuBaslamaSaati2" type="time" class="form-control" />
+                    <span asp-validation-for="RandevuBaslamaSaati2" class="text-danger"></span>
+                </div>
+                <div class="form-group col-4">
+                    <input asp-for="RandevuBaslamaSaati3" type="time" class="form-control" />
+                    <span asp-validation-for="RandevuBaslamaSaati3" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="PoliklinikFotografi" class="control-label">@localizer["Yeni Görsel"]</label>
+                <input asp-for="PoliklinikFotografi" type="file" name="file" class="form-control  mb-2" />
+                <input style="display:none;" asp-for="PoliklinikFotografi" class="form-control mb-2" />
+                <span asp-validation-for="PoliklinikFotografi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnaBilimDali" class="control-label"></label>
+                <select class="form-control" asp-for="AnaBilimDali" asp-items="Html.GetEnumSelectList<AnaBilimDali>()">
+                    <option selected="selected" value="">Ana Bilim Dalı Seçiniz</option>
+                </select>
+                <span asp-validation-for="AnaBilimDali" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FilmUcreti" class="control-label"></label>
+                <input asp-for="FilmUcreti" type="number" class="form-control" />
+                <span asp-validation-for="FilmUcreti" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HastaneId" class="control-label"></label>
+                <select asp-for="HastaneId" class="form-control" asp-items="ViewBag.HastaneId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="BashekimId" class="control-label"></label>
+                <select asp-for="BashekimId" class="form-control" asp-items="ViewBag.BashekimId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoktorListesi" class="control-label"></label>
+                <select asp-for="DoktorListesi" class="form-control" asp-items="ViewBag.DoktorId" multiple></select>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="@localizer["Kaydet"]" class="btn btn-primary" />
+                <a class="btn btn-secondary float-right" asp-action="Index">@localizer["Geri Dön"]</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+

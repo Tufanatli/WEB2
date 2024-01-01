@@ -1,0 +1,35 @@
+﻿@model eRandevuApp.Models.Bashekim
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
+    ViewData["Title"] = "bashekim Ekle";
+}
+
+<h2 class="text-center">@localizer["bashekim Ekle"]</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4 text-left m-auto">
+        <form method="post" enctype="multipart/form-data" asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BashekimFotografi" class="control-label"></label>
+                <input asp-for="BashekimFotografi" type="file" name="file" class="form-control" />
+                <span asp-validation-for="BashekimFotografi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BashekimAdSoyad" class="control-label"></label>
+                <input asp-for="BashekimAdSoyad" class="form-control" />
+                <span asp-validation-for="BashekimAdSoyad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BashekimHakkinda" class="control-label"></label>
+                <textarea asp-for="BashekimHakkinda" rows="5" class="form-control"></textarea>
+                <span asp-validation-for="BashekimHakkinda" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="@localizer["Ekle"]" class="btn btn-outline-light text-dark" />
+                <a class="btn btn-secondary float-right" asp-action="Index">@localizer["Geri Dön"]</a>
+            </div>
+        </form>
+    </div>
+</div>
+

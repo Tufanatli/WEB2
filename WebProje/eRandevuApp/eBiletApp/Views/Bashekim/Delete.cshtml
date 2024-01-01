@@ -1,0 +1,36 @@
+﻿@model eRandevuApp.Models.Bashekim
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
+    ViewData["Title"] = "bashekim Sil";
+}
+
+<h3>@localizer["Silmek istediğinize emin misiniz?"]</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BashekimFotografi)
+        </dt>
+        <dd class="col-sm-10">
+            <img src="@Model.BashekimFotografi" asp-append-version="true" style="width:200px; height:200px;">
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BashekimAdSoyad)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BashekimAdSoyad)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BashekimHakkinda)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BashekimHakkinda)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="BashekimId" />
+        <input type="submit" value="@localizer["Sil"]" class="btn btn-danger float-right" />
+        <a class="btn btn-outline-secondary" asp-action="Index">@localizer["Geri Dön"]</a>
+    </form>
+</div>

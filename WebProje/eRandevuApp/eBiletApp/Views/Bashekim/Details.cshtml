@@ -1,0 +1,38 @@
+﻿@model eRandevuApp.Models.Bashekim
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
+    ViewData["Title"] = "bashekim Hakkında";
+}
+
+<h1 class="text-center>@localizer["bashekim Bilgileri"]</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2 align-self-center">
+            @Html.DisplayNameFor(model => model.BashekimFotografi)
+        </dt>
+        <dd class="col-sm-10 pb-5">
+            <img class="w-50 h-100" src="@Model.BashekimFotografi" asp-append-version="true">
+        </dd>
+        <dt class="col-sm-2 pb-5 align-self-center">
+            @Html.DisplayNameFor(model => model.BashekimAdSoyad)
+        </dt>
+        <dd class="col-sm-10 pb-5">
+            @Html.DisplayFor(model => model.BashekimAdSoyad)
+        </dd>
+        <dt class="col-sm-2 align-self-center">
+            @Html.DisplayNameFor(model => model.BashekimHakkinda)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BashekimHakkinda)
+        </dd>
+    </dl>
+</div>
+<div>
+    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+    {
+        <a class="btn btn-outline-success float-right" asp-action="Edit" asp-route-id="@Model.BashekimId">@localizer["Düzenle"]</a>
+    }
+    <a class="btn btn-outline-secondary" asp-action="Index">@localizer["Geri Dön"]</a>
+</div>

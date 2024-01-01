@@ -1,0 +1,62 @@
+﻿@model ICollection<Randevu>
+@{
+    ViewData["Title"] = "Randevular";
+}
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+<div class="row">
+
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th>@localizer["Randevu No"]</th>
+                <th style="padding-left:100px;">@localizer["Randevular"]</th>
+                <th>@localizer["Toplam Tutar"]</th>
+                @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                {
+                     <th>@localizer["Kullanıcı"]</th>
+}
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var randevu in Model)
+            {
+                <tr>
+                    <td class="align-middle">@randevu.RandevuId</td>
+                    <td class="align-middle">
+                        <ul>
+                            @foreach (var Poliklinik in randevu.RandevuPoliklinikler)
+                            {
+                                <li>
+                                    <div>
+                                        @((Poliklinik.Fiyat * Poliklinik.Adet).ToString()) TL - @Poliklinik.Poliklinik.PoliklinikAdi (@Poliklinik.Adet @localizer["Randevu"])
+                                    </div>
+
+                                </li>
+
+                            }
+
+                        </ul>
+                    </td>
+                    <td class="align-middle">
+                        @randevu.RandevuPoliklinikler.Select(m => m.Poliklinik.FilmUcreti * m.Adet).Sum().ToString() TL
+                    </td>
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                        <td class="align-middle">@randevu.Kullanici.UserName</td>
+}
+
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+
+</div>
+
+<div class="text-center">
+    <a class="btn btn-outline-success" asp-controller="Poliklinik" asp-action="Index">@localizer["Anasayfa"]</a>
+</div>
+

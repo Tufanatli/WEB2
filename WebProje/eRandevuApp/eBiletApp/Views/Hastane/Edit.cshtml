@@ -1,0 +1,40 @@
+﻿@model eRandevuApp.Models.Hastane
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 class="text-center">@localizer["Hastane Bilgilerini Düzenle"]</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4 text-left m-auto form">
+        <form method="post" enctype="multipart/form-data" asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="HastaneId" />
+            <div class="form-group">
+                <label asp-for="HastaneFotografi" class="control-label">@localizer["Yeni Görsel"]</label>
+                <input asp-for="HastaneFotografi" type="file" name="file" class="form-control mb-2" />
+                <input style="display:none;" asp-for="HastaneFotografi" class="form-control mb-2" />
+                <span asp-validation-for="HastaneFotografi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HastaneAdi" class="control-label"></label>
+                <input asp-for="HastaneAdi" class="form-control" />
+                <span asp-validation-for="HastaneAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HastaneHakkinda" class="control-label"></label>
+                <textarea asp-for="HastaneHakkinda" rows="5" class="form-control"><</textarea>
+                <span asp-validation-for="HastaneHakkinda" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <input type="submit" value="@localizer["Kaydet"]" class="btn btn-primary" />
+                    <a class="btn btn-secondary float-right" asp-action="Index">@localizer["Geri Dön"]</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

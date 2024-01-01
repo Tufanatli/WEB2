@@ -1,0 +1,70 @@
+﻿@model IEnumerable<eRandevuApp.Models.Poliklinik>
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
+    ViewData["Title"] = "Poliklinikler";
+}
+
+<div class="row" style="align-items:stretch">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 col-xs-6 border-primary mb-3">
+            <div class="card mb-3" style="max-width: 600px;">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <div class="card-header text-white bg-info">
+                            <p class="card-text">
+                                <h5 class="card-title">
+                                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                                    {
+                                        <a class=" btn btn-dark text-white float-md-right" style="font-size:large" asp-action="Edit" asp-route-id="@item.PoliklinikId">@localizer["Düzenle"]</a>
+                                    }
+                                    <a class="text-center">            @item.PoliklinikAdi   </a>
+                                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                                    {
+                                        <a class="btn btn-danger text-white float-md-right" style="font-size:large" asp-action="Delete" asp-route-id="@item.PoliklinikId">@localizer["Sil"]</a>
+                                    }
+                                </h5>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <p class="card-text"><b>@localizer["Poliklinik Hakkında"]: </b>@item.PoliklinikHakkinda.Substring(0,100)...</p>
+                            <p class="card-text"><b>@localizer["Ana Bilim Dalı"]:  </b>@item.AnaBilimDali</p>
+                            <p class="card-text"><b>@localizer["Hastane"]:  </b>@item.Hastane.HastaneAdi</p>
+                            <p class="card-text" >
+                                <b>@localizer["Randevu Seçiniz"]: </b>
+                                <select name="saat" id="saat" style=" border: none; overflow: hidden; background-color: whitesmoke;">
+                                    <option class="btn btn-dark card-text" value="bir">@item.RandevuBaslamaSaati1</option>
+                                    <option class="btn btn-dark card-text" value="iki">@item.RandevuBaslamaSaati2</option>
+                                    <option class="btn btn-dark card-text" value="uc">@item.RandevuBaslamaSaati3</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="@item.PoliklinikFotografi" width="100%" height="380px"  asp-append-version="true" >
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card-footer">
+                            <p class="card-text">
+                                <a class="btn btn-outline-secondary float-right" asp-action="Details" asp-route-id="@item.PoliklinikId">
+                                    @localizer["Daha Fazla"]
+                                </a>
+                                <a asp-controller="Randevu" asp-action="SepeteEkleArtir" asp-route-id="@item.PoliklinikId" class="btn btn-success text-white">
+                                    @localizer["Randevu Al"] @item.FilmUcreti TL
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+
+

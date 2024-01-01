@@ -1,0 +1,12 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+<div class="row">
+    <div class="text-center alert alert-secondary col-md-6 offset-3">
+        <h1>@localizer["Üyelik Oluşturuldu"]</h1>
+        <h2>@localizer["Teşekkür ederiz!"]</h2>
+
+    </div>
+</div>
+<div class="text-center">
+    <a class="btn btn-outline-success " asp-controller="Account" asp-action="Login">@localizer["Giriş Yap"]</a>
+</div>

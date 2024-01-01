@@ -1,0 +1,57 @@
+﻿@model IEnumerable<eRandevuApp.Models.Bashekim>
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
+    ViewData["Title"] = "Bashekimler";
+}
+
+<h1>@localizer["Bashekimler"]</h1>
+@if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+{
+    <p>
+        <a asp-action="Create" class="btn btn-success text-white">@localizer["bashekim Ekle"]</a>
+    </p>
+}
+
+<table class="table">
+    <thead>
+        <tr class="text-center text-uppercase">
+            <th>
+                @Html.DisplayNameFor(model => model.BashekimFotografi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BashekimAdSoyad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BashekimHakkinda)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="text-center">
+                <td>
+                    <img src="@item.BashekimFotografi" asp-append-version="true" style="width:200px; height:280px;">
+                </td>
+                <td class="font-weight-bold">
+                    @Html.DisplayFor(modelItem => item.BashekimAdSoyad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BashekimHakkinda)
+                </td>
+                <td>
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.BashekimId" class="btn btn-secondary btn-block">@localizer["Düzenle"]</a>
+                        <br />
+                        <a asp-action="Details" asp-route-id="@item.BashekimId" class="btn btn-info btn-block">@localizer["Detay"]</a>
+                        <br />
+                        <a asp-action="Delete" asp-route-id="@item.BashekimId" class="btn btn-dark btn-block">@localizer["Sil"]</a>
+                    }
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
